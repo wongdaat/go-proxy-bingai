@@ -25,3 +25,6 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: 'deploy --keep-vars'
+          runs:
+  using: 'node20'
+  main: 'main.js'
